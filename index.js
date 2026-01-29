@@ -19,7 +19,7 @@ export default {
     }
 
     const gemini = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=AIzaSyAMPFk1i4KGu11nTl1r6tNG6Xw2I-cMvjg`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${env.GEMINI_API_KEY}`,
       {
         method: "POST",
         headers: {
